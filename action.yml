@@ -1,0 +1,15 @@
+name: 'PHP Copy Paste Detector'
+description: 'php-cpd'
+branding:
+  icon: 'check-circle'
+  color: 'green'
+inputs:
+  dir:
+    description: 'Folder to check copy paste'
+    required: false
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dir }}
