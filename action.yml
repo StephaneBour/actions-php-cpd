@@ -4,12 +4,12 @@ branding:
   icon: 'check-circle'
   color: 'green'
 inputs:
-  dir:
-    description: 'Folder to check copy paste'
+  args:
+    description: 'Arguments to pass to phpcpd'
     required: false
     default: '.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.dir }}
+    - ${{ inputs.args }}
