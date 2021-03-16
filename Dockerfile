@@ -1,6 +1,6 @@
-FROM php:7.4-cli
+FROM php:8.0-cli
 
-LABEL version="7.4"
+LABEL version="8.0"
 LABEL repository="https://github.com/StephaneBour/actions-php-cpd"
 LABEL homepage="https://github.com/StephaneBour/actions-php-cpd"
 LABEL maintainer="Stéphane Bour <stephane.bour@gmail.com>"

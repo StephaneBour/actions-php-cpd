@@ -4,15 +4,15 @@ This action controls that code was not duplicated.
 
 ## Inputs
 
-### `dir`
+### `args`
 
-The folder to control. Default `"."`.
+Arguments to pass to phpcpd. Default `"."`.
 
 ## Example usage
 
 ```yaml
 - name: PHP Copy Paste Detector
-  uses: StephaneBour/actions-php-cpd@1.0
+  uses: StephaneBour/actions-php-cpd@8.0
   with:
-    dir: './src'
+    args: './src'
 ```
