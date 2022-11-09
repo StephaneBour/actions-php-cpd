@@ -8,6 +8,7 @@ LABEL maintainer="Stéphane Bour <stephane.bour@gmail.com>"
 RUN curl -L https://phar.phpunit.de/phpcpd.phar -o /phpcpd
 
 COPY "entrypoint.sh" "/entrypoint.sh"
+COPY "memory_limit.ini" "/usr/local/etc/php/conf.d/memory_limit.ini"
 
 RUN chmod +x /entrypoint.sh && chmod a+x /phpcpd
 ENTRYPOINT ["/entrypoint.sh"]
