@@ -12,7 +12,7 @@ Arguments to pass to phpcpd. Default `"."`.
 
 ```yaml
 - name: PHP Copy Paste Detector
-  uses: StephaneBour/actions-php-cpd@8.0
+  uses: StephaneBour/actions-php-cpd@8.2
   with:
     args: './src'
 ```
